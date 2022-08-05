@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -17,19 +18,19 @@
         <img class="logo-name__image" src="img/logo-name.svg" width="101" height="18"
           alt="Интернет-магазин Кэт энерджи.">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <nav class="main-nav navigation">
+        <button class="navigation__toggle button" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
+        <div class="navigation__wrapper">
+          <ul class="navigation__list">
+            <li class="navigation__item">
               <a href="index.html">главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="navigation__item">
               <a href="catalog.html">каталог продукции</a>
             </li>
-            <li class="main-nav__item">
+            <li class="navigation__item">
               <a href="form.html">подбор программы</a>
             </li>
           </ul>
@@ -51,22 +52,16 @@
                 <b class="card__title">Cat Energy PRO 500 г</b>
               </a>
               <div class="card__container">
-                <table class="card__description">
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Масса</td>
-                    <td class="card__description-cell card__description-cell-text">500 г</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Вкус</td>
-                    <td class="card__description-cell card__description-cell-text ">Курица</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Цена</td>
-                    <td class="card__description-cell card__description-cell-text">700 Р.</td>
-                  </tr>
-                </table>
+                <dl class="card__description">
+                  <dt class="card__description-name">Масса</dt>
+                  <dd class="card__description-value">500 г</dd>
+                  <dt class="card__description-name">Вкус</dt>
+                  <dd class="card__description-value">Курица</dd>
+                  <dt class="card__description-name">Цена</dt>
+                  <dd class="card__description-value">700 Р.</dd>
+                </dl>
               </div>
-              <a class="catalog__card-button catalog__card-more button" href="#">заказать</a>
+              <a class="card__order-button button" href="#">заказать</a>
             </div>
           </li>
           <li class="catalog__card card">
@@ -76,22 +71,16 @@
                 <b class="card__title">Cat Energy PRO 1000 г</b>
               </a>
               <div class="card__container">
-                <table class="card__description">
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Масса</td>
-                    <td class="card__description-cell card__description-cell-text">1000 г</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Вкус</td>
-                    <td class="card__description-cell card__description-cell-text ">Курица</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Цена</td>
-                    <td class="card__description-cell card__description-cell-text">1000 Р.</td>
-                  </tr>
-                </table>
+                <dl class="card__description">
+                  <dt class="card__description-name">Масса</dt>
+                  <dd class="card__description-value">1000 г</dd>
+                  <dt class="card__description-name">Вкус</dt>
+                  <dd class="card__description-value">Курица</dd>
+                  <dt class="card__description-name">Цена</dt>
+                  <dd class="card__description-value">1000 Р.</dd>
+                </dl>
               </div>
-              <a class="catalog__card-button catalog__card-more button" href="#">заказать</a>
+              <a class="card__order-button button" href="#">заказать</a>
             </div>
           </li>
           <li class="catalog__card card">
@@ -101,22 +90,17 @@
                 <b class="card__title">Cat Energy PRO 500 г</b>
               </a>
               <div class="card__container">
-                <table class="card__description">
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Масса</td>
-                    <td class="card__description-cell card__description-cell-text">500 г</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Вкус</td>
-                    <td class="card__description-cell card__description-cell-text ">Рыба</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Цена</td>
-                    <td class="card__description-cell card__description-cell-text">700 Р.</td>
-                  </tr>
-                </table>
+                <dl class="card__description">
+                  <dt class="card__description-name">Масса</dt>
+                  <dd class="card__description-value">500 г</dd>
+                  <dt class="card__description-name">Вкус</dt>
+
+                  <dd class="card__description-value">Рыба</dd>
+                  <dt class="card__description-name">Цена</dt>
+                  <dd class="card__description-value">700 Р.</dd>
+                </dl>
               </div>
-              <a class="catalog__card-button catalog__card-more button" href="#">заказать</a>
+              <a class="card__order-button button" href="#">заказать</a>
             </div>
           </li>
           <li class="catalog__card card">
@@ -126,22 +110,16 @@
                 <b class="card__title">Cat Energy PRO 1000 г</b>
               </a>
               <div class="card__container">
-                <table class="card__description">
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Масса</td>
-                    <td class="card__description-cell card__description-cell-text">1000 г</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Вкус</td>
-                    <td class="card__description-cell card__description-cell-text ">Рыба</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Цена</td>
-                    <td class="card__description-cell card__description-cell-text">1000 Р.</td>
-                  </tr>
-                </table>
+                <dl class="card__description">
+                  <dt class="card__description-name">Масса</dt>
+                  <dd class="card__description-value">1000 г</dd>
+                  <dt class="card__description-name">Вкус</dt>
+                  <dd class="card__description-value">Рыба</dd>
+                  <dt class="card__description-name">Цена</dt>
+                  <dd class="card__description-value">1000 Р.</dd>
+                </dl>
               </div>
-              <a class="catalog__card-button catalog__card-more button" href="#">заказать</a>
+              <a class="card__order-button button" href="#">заказать</a>
             </div>
           </li>
           <li class="catalog__card card">
@@ -151,22 +129,16 @@
                 <b class="card__title">Cat Energy PRO 500 г</b>
               </a>
               <div class="card__container">
-                <table class="card__description">
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Масса</td>
-                    <td class="card__description-cell card__description-cell-text">500 г</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Вкус</td>
-                    <td class="card__description-cell card__description-cell-text ">Гречка</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Цена</td>
-                    <td class="card__description-cell card__description-cell-text">400 Р.</td>
-                  </tr>
-                </table>
+                <dl class="card__description">
+                  <dt class="card__description-name">Масса</dt>
+                  <dd class="card__description-value">500 г</dd>
+                  <dt class="card__description-name">Вкус</dt>
+                  <dd class="card__description-value">Гречка</dd>
+                  <dt class="card__description-name">Цена</dt>
+                  <dd class="card__description-value">400 Р.</dd>
+                </dl>
               </div>
-              <a class="catalog__card-button catalog__card-more button" href="#">заказать</a>
+              <a class="card__order-button button" href="#">заказать</a>
             </div>
           </li>
           <li class="catalog__card card">
@@ -176,22 +148,16 @@
                 <b class="card__title">Cat Energy PRO 1000 г</b>
               </a>
               <div class="card__container">
-                <table class="card__description">
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Масса</td>
-                    <td class="card__description-cell card__description-cell-text">1000 г</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Вкус</td>
-                    <td class="card__description-cell card__description-cell-text ">Гречка</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Цена</td>
-                    <td class="card__description-cell card__description-cell-text">700 Р.</td>
-                  </tr>
-                </table>
+                <dl class="card__description">
+                  <dt class="card__description-name">Масса</dt>
+                  <dd class="card__description-value">1000 г</dd>
+                  <dt class="card__description-name">Вкус</dt>
+                  <dd class="card__description-value">Гречка</dd>
+                  <dt class="card__description-name">Цена</dt>
+                  <dd class="card__description-value">700 Р.</dd>
+                </dl>
               </div>
-              <a class="catalog__card-button catalog__card-more button" href="#">заказать</a>
+              <a class="card__order-button button" href="#">заказать</a>
             </div>
           </li>
           <li class="catalog__card card">
@@ -201,28 +167,22 @@
                 <b class="card__title">Cat Energy PRO 500 г</b>
               </a>
               <div class="card__container">
-                <table class="card__description">
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Масса</td>
-                    <td class="card__description-cell card__description-cell-text">500 г</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Вкус</td>
-                    <td class="card__description-cell card__description-cell-text ">Рис</td>
-                  </tr>
-                  <tr class="card__description-row">
-                    <td class="card__description-cell card__description-cell-title">Цена</td>
-                    <td class="card__description-cell card__description-cell-text">500 Р.</td>
-                  </tr>
-                </table>
+                <dl class="card__description">
+                  <dt class="card__description-name">Масса</dt>
+                  <dd class="card__description-value">500 г</dd>
+                  <dt class="card__description-name">Вкус</dt>
+                  <dd class="card__description-value">Рис</dd>
+                  <dt class="card__description-name">Цена</dt>
+                  <dd class="card__description-value">500 Р.</dd>
+                </dl>
               </div>
-              <a class="catalog__card-button catalog__card-more button" href="#">заказать</a>
+              <a class="card__order-button button" href="#">заказать</a>
             </div>
           </li>
           <li class="catalog__card show-more">
             <span class="show-more__title">Показать еще 100500 товаров</span>
             <span class="show-more__text">На самом деле вкусов гораздо больше!</span>
-            <a class="show-more__button" href="#">показать все</a>
+            <a class="show-more__button button" href="#">показать все</a>
           </li>
         </ul>
       </div>
@@ -265,9 +225,6 @@
         </div>
       </div>
     </section>
-  </main>
-
-  <footer class="footer-container">
     <section class="welcome">
       <div class="welcome__wrapper">
         <h2 class="welcome__title visually-hidden">Сотрудничество.</h2>
@@ -281,6 +238,9 @@
         </div>
       </div>
     </section>
+  </main>
+
+  <footer class="footer-container">
     <section class="about-us">
       <div class="about-us__wrapper">
         <h2 class="about-us__title visually-hidden">Мы в социальных сетях</h2>
