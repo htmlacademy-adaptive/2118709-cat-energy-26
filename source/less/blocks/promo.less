@@ -1,0 +1,42 @@
+.promo {
+  margin-bottom: 20px;
+}
+
+.promo__wrapper {
+  color: @white;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    width: 320px;
+    height: 302px;
+    content: "";
+    background-image:
+      linear-gradient(
+        hsl(97 53% 47% / 85%),
+        hsl(97 53% 47% / 85%)
+      ),
+      url("../../img/bg-cat.jpg");
+    top: 0;
+    bottom: 30px;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  padding: 23px 36px 0 35px;
+  margin: 0 auto;
+  margin-bottom: 29px;
+}
+
+.promo__slogan {
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
