@@ -4,32 +4,34 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo-icon.svg" width="34" height="38"
           alt="Иконка логотипа Кэт энерджи.">
       </a>
-      <a class="main-header__logo-name logo-name">
+      <a class="main-header__logo-name logo-name " href="index.html">
         <img class="logo-name__image" src="img/logo-name.svg" width="101" height="18"
           alt="Интернет-магазин Кэт энерджи.">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <nav class="main-nav navigation">
+        <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
+          <svg aria-hidden="true" focusable="false" width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24"/></svg>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
+        <div class="navigation__wrapper">
+          <ul class="navigation__list">
+            <li class="navigation__item">
               <a href="index.html">главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="navigation__item">
               <a href="catalog.html">каталог продукции</a>
             </li>
-            <li class="main-nav__item">
+            <li class="navigation__item">
               <a href="form.html">подбор программы</a>
             </li>
           </ul>
@@ -44,7 +46,9 @@
       <div class="promo__wrapper">
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <a class="promo__button" href="form.html">Подобрать программу</a>
+        <img class="promo__image" src="./img/promo__image.png" width="280" height="270"
+        alt="Продукт Кэт энерджи.">
+        <a class="promo__button button" href="form.html">Подобрать программу</a>
       </div>
     </section>
 
@@ -99,20 +103,14 @@
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
           16
           часов в день. </p>
-        <table class="example__profit">
-          <tr class="example__profit-row">
-            <td class="example__profit-cell-title">5 КГ</td>
-            <td class="example__profit-cell-text">снижение веса</td>
-          </tr>
-          <tr class="example__profit-row">
-            <td class="example__profit-cell example__profit-cell-title">60 ДНЕЙ</td>
-            <td class="example__profit-cell example__profit-cell-text ">затрачено времени</td>
-          </tr>
-          <tr class="example__profit-row">
-            <td class="example__profit-cell example__profit-cell-title">Затраты на питание:</td>
-            <td class="example__profit-cell example__profit-cell-number">15 000 РУБ.</td>
-          </tr>
-        </table>
+        <dl class="example__profit">
+            <dt class="example__profit-value">5 КГ</dt>
+            <dd class="example__profit-name">снижение веса</dd>
+            <dt class="example__profit-value">60 ДНЕЙ</dt>
+            <dd class="example__profit-name">затрачено времени</dd>
+            <dt class="example__profit-name">Затраты на питание:</dt>
+            <dd class="example__profit-value">15 000 РУБ.</dd>
+        </dl>
         <div class="example__slider slider">
           <div class="slider__image">
           </div>
@@ -132,9 +130,6 @@
         </div>
       </div>
     </section>
-  </main>
-
-  <footer class="footer-container">
     <section class="welcome">
       <div class="welcome__wrapper">
         <h2 class="welcome__title visually-hidden">Сотрудничество.</h2>
@@ -148,6 +143,9 @@
         </div>
       </div>
     </section>
+  </main>
+
+  <footer class="footer-container">
     <section class="about-us">
       <div class="about-us__wrapper">
         <h2 class="about-us__title visually-hidden">Мы в социальных сетях</h2>
