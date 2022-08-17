@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -10,32 +11,34 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logo-icon.svg" width="34" height="38"
-          alt="Иконка логотипа Кэт энерджи.">
-      </a>
-      <a class="main-header__logo-name logo-name " href="index.html">
-        <img class="logo-name__image" src="img/logo-name.svg" width="101" height="18"
-          alt="Интернет-магазин Кэт энерджи.">
-      </a>
+      <div class="main-header__holder">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="img/logo-icon.svg" width="34" height="38"
+            alt="Иконка логотипа Кэт энерджи.">
+        </a>
+        <a class="main-header__logo-name logo-name " href="index.html">
+          <img class="logo-name__image" src="img/logo-name.svg" width="101" height="18"
+            alt="Интернет-магазин Кэт энерджи.">
+        </a>
+      </div>
       <nav class="main-nav navigation">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
-          <svg aria-hidden="true" focusable="false" width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24"/></svg>
+          <svg aria-hidden="true" focusable="false" width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
+          </svg>
         </button>
-        <div class="navigation__wrapper">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="index.html">главная</a>
-            </li>
-            <li class="navigation__item">
-              <a href="catalog.html">каталог продукции</a>
-            </li>
-            <li class="navigation__item">
-              <a href="form.html">подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -44,31 +47,30 @@
     <h1 class="visually-hidden">Интернет-магазин Кэт энерджи</h1>
     <section class="promo">
       <div class="promo__wrapper">
+        <div class="promo__container">
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="./img/promo__image.png" width="280" height="270"
-        alt="Продукт Кэт энерджи.">
+        <img class="promo__image" src="./img/promo-image.png" width="280" height="270" alt="Продукт Кэт энерджи.">
         <a class="promo__button button" href="form.html">Подобрать программу</a>
       </div>
+    </div>
     </section>
 
     <section class="options">
-      <div class="options__wrapper">
-        <h2 class="visually-hidden">Список опций</h2>
-        <section class="options__item">
-          <h3 class="options__name">похудение</h3>
-          <p class="options__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-            Пора
-            на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="options__link" href="#">каталог slim</a>
-        </section>
-        <section class="options__item">
-          <h3 class="options__name">Набор массы</h3>
-          <p class="options__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-            поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="options__link" href="#">каталог pro</a>
-        </section>
-      </div>
+      <h2 class="visually-hidden">Список опций</h2>
+      <section class="options__item options__item-loosing-weight">
+        <h3 class="options__name">похудение</h3>
+        <p class="options__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+          Пора
+          на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <a class="options__link" href="#">каталог slim</a>
+      </section>
+      <section class="options__item options__item-gaining-weight">
+        <h3 class="options__name">Набор массы</h3>
+        <p class="options__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+          поможет вашему коту нарастить необходимые мышцы!</p>
+        <a class="options__link" href="#">каталог pro</a>
+      </section>
     </section>
 
     <section class="benefits">
@@ -104,12 +106,12 @@
           16
           часов в день. </p>
         <dl class="example__profit">
-            <dt class="example__profit-value">5 КГ</dt>
-            <dd class="example__profit-name">снижение веса</dd>
-            <dt class="example__profit-value">60 ДНЕЙ</dt>
-            <dd class="example__profit-name">затрачено времени</dd>
-            <dt class="example__profit-name">Затраты на питание:</dt>
-            <dd class="example__profit-value">15 000 РУБ.</dd>
+          <dt class="example__profit-value">5 КГ</dt>
+          <dd class="example__profit-name">снижение веса</dd>
+          <dt class="example__profit-value">60 ДНЕЙ</dt>
+          <dd class="example__profit-name">затрачено времени</dd>
+          <dt class="example__profit-name example__profit-name-diffrent">Затраты на питание:</dt>
+          <dd class="example__profit-value example__profit-value-diffrent">15 000 РУБ.</dd>
         </dl>
         <div class="example__slider slider">
           <div class="slider__image">
@@ -200,12 +202,12 @@
         </div>
         <div class="about-us__academy academy">
           <a class="academy__link" href="">
+            <span class="academy__title">HTML Academy</span>
             <svg class="academy__logo" aria-hidden="true" focusable="false" width="27" height="34"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
             </svg>
-            <span class="academy__title">HTML Academy</span>
           </a>
         </div>
       </div>
