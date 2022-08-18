@@ -3,7 +3,9 @@
 }
 
 .welcome__contacts {
-  margin: 26px 20px;
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__title {
@@ -13,6 +15,7 @@
   text-transform: uppercase;
   color: @light-black;
   margin: 0;
+  width: 139px;
 }
 
 .contacts__address {
@@ -20,13 +23,56 @@
   color: @dark-grey;
   font-size: @font-size-main;
   line-height: 20px;
+  width: 139px;
   margin: 0;
 }
 
 .welcome__map {
   height: 362px;
+}
 
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .welcome__map {
     height: 400px;
+  }
+
+  .welcome__contacts {
+    padding: 56px 70px;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+    line-height: 26px;
+    width: 172px;
+  }
+
+  .contacts__address {
+    width: 160px;
+    text-align: right;
+  }
+
+  .contacts__city {
+    display: block;
+    padding-bottom: 6px;
+    padding-top: 19px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .welcome {
+    position: relative;
+  }
+
+  .welcome__contacts {
+    position: absolute;
+    width: 565px;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+    transform: translateY(50%);
+  }
+
+  .contacts__address {
+    text-align: left;
   }
 }
