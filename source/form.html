@@ -26,13 +26,13 @@
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="index.html">главная</a>
+              <a class="navigation__link navigation__link--black" href="index.html">главная</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="catalog.html">каталог продукции</a>
+              <a class="navigation__link navigation__link--black" href="catalog.html">каталог продукции</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="form.html">подбор программы</a>
+              <a class="navigation__link navigation__link--black" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -41,33 +41,35 @@
   </header>
 
   <main class="main-container">
-    <h1 class="main-container__title">Подбор программы</h1>
+    <h1 class="main-container__title main-container__title-form">Подбор программы</h1>
     <section class="filters">
-      <div class="filters__wrapper">
-        <h2 class="filters__title visually-hidden">Форма подбора программы</h2>
-        <p class="filters__info">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="filters__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__field-group">
-            <p class="form__field">
-              <label class="form__label" for="cat-name">ИМЯ:*</label>
-              <input class="field " type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
-            </p>
-            <p class="form__field">
-              <label class="form__label" for="cat-weight">Вес (кг):*</label>
-              <input class="field" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
-            </p>
-            <p class="form__field">
-              <label class="form__label" for="cat-age">Возраст (лет):</label>
-              <input class="field" type="number" id="cat-age" name="cat-age" placeholder="7" required>
-            </p>
+      <h2 class="filters__title visually-hidden">Форма подбора программы</h2>
+      <p class="filters__info">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form class="filters__form form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="form__field-group">
+          <div class="form__field-group-container">
+            <div class="form__field-wrapper">
+              <p class="form__field">
+                <label class="form__label" for="cat-name">ИМЯ:*</label>
+                <input class="field " type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
+              </p>
+              <p class="form__field">
+                <label class="form__label" for="cat-weight">Вес (кг):*</label>
+                <input class="field" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+              </p>
+              <p class="form__field">
+                <label class="form__label" for="cat-age">Возраст (лет):</label>
+                <input class="field" type="number" id="cat-age" name="cat-age" placeholder="7" required>
+              </p>
+            </div>
             <div class="form__filter filter">
               <ul class="filter__list">
                 <li class="filter__item">
                   <label class="filter__control control">
-                    <input class="visually-hidden control-input" type="radio" name="feeding-system" value="loose-weight"
-                      checked>
-                    <span class="control-mark"></span>
-                    <span class="control-label">похудение</span>
+                    <input class="visually-hidden control__input" type="radio" name="feeding-system"
+                      value="loose-weight" checked>
+                    <span class="control__mark"></span>
+                    <span class="control__label">похудение</span>
                   </label>
                 </li>
                 <li class="filter__item">
@@ -87,74 +89,80 @@
                 </li>
               </ul>
             </div>
-          </fieldset>
-          <fieldset class="form__field-group">
-            <legend class="form__title">Контактные данные (владельца кота)</legend>
-            <p class="form__field">
+          </div>
+        </fieldset>
+        <fieldset class="form__field-group form__field-group--contacts">
+          <legend class="form__title form__title--contacts">Контактные данные (владельца кота)</legend>
+          <div class="form__holder">
+            <p class="form__field form__field--contacts">
               <label class="form__label" for="email">E-mail:*</label>
               <input class="field " type="text" id="email" name="email" placeholder="kuklachev@gmail.com" required>
             </p>
-            <p class="form__field">
+            <p class="form__field form__field--contacts">
               <label class="form__label" for="phone">Телефон:*</label>
               <input class="field " type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
             </p>
-          </fieldset>
-          <fieldset class="form__field-group">
-            <legend class="form__title">Комментарий</legend>
-            <p class="form__field">
-              <label class="form__label visually-hidden" for="comment">Комментарий</label>
-              <textarea class="field " id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"
-                required></textarea>
-            </p>
-          </fieldset>
-          <fieldset class="form__field-group">
-            <legend class="form__title">Дополнительно</legend>
-            <div class="form__filter filter">
-              <ul class="filter__list">
-                <li class="filter__item">
-                  <label class="filter__control" for="sweetener"></label>
-                  <input class="filter__input control visually-hidden" id="sweetener" type="checkbox" name="sweetener"
-                    checked>
-                  <span class="filter-mark"></span>
-                  <span class="filter__label">сахарозаменитель</span>
-                </li>
-                <li class="filter__item">
-                  <label class="filter__control" for="water"></label>
-                  <input class="filter__input control visually-hidden" id="water" type="checkbox" name="water">
-                  <span class="filter__mark"></span>
-                  <span class="filter__label">питьевая вода</span>
-                </li>
-                <li class="filter__item">
-                  <label class="filter__control" for="milk"></label>
-                  <input class="filter__input control visually-hidden" id="milk" type="checkbox" name="milk">
-                  <span class="filter__mark"></span>
-                  <span class="filter__label">молоко</span>
-                </li>
-                <li class="filter__item ">
-                  <label class="filter__control" for="vitamins"></label>
-                  <input class="filter__input control visually-hidden" id="vitamins" type="checkbox" name="vitamins">
-                  <span class="filter__mark"></span>
-                  <span class="filter__label">витамины</span>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-          <button class="form__submit-button" type="submit">отправить заявку</button>
-          <p class="form__awarning">* — Обязательные поля</p>
-        </form>
-      </div>
-    </section>
-    <section class="welcome">
-      <div class="welcome__wrapper">
-        <h2 class="welcome__title visually-hidden">Сотрудничество.</h2>
-        <div class="welcome__contacts contacts">
-          <h3 class="contacts__title"> приглашаем к сотрудничеству дилеров!</h3>
-          <p class="contacts__address">
-            <span>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+          </div>
+        </fieldset>
+        <fieldset class="form__field-group form__field-group--comments">
+          <legend class="form__title form__title--comments">Комментарий</legend>
+          <p class="form__field">
+            <label class="form__label visually-hidden" for="comment">Комментарий</label>
+            <textarea class="field field--textarea" id="comment" name="comment"
+              placeholder="Расскажите обо всех повадках кота" required></textarea>
           </p>
+        </fieldset>
+        <fieldset class="form__field-group form__field-group--extra">
+          <legend class="form__title form__title--extra">Дополнительно</legend>
+          <div class="form__filter filter filter--extra">
+            <ul class="filter__list filter__list--extra">
+              <li class="filter__item filter__item--extra">
+                <label class="filter__control control">
+                  <input class="control__input visually-hidden" type="checkbox" name="sweetener" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="filter__item filter__item--extra">
+                <label class="filter__control control">
+                  <input class="control__input visually-hidden" type="checkbox" name="water">
+                  <span class="control__mark"></span>
+                  <span class="control__label">питьевая вода</span>
+                </label>
+              </li>
+              <li class="filter__item filter__item--extra">
+                <label class="filter__control control">
+                  <input class="control__input visually-hidden" type="checkbox" name="milk">
+                  <span class="control__mark"></span>
+                  <span class="control__label">молоко</span>
+                </label>
+              </li>
+              <li class="filter__item filter__item--extra">
+                <label class="filter__control control">
+                  <input class="control__input visually-hidden" type="checkbox" name="vitamins">
+                  <span class="control__mark"></span>
+                  <span class="control__label">витамины</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <div class="form__button-container">
+          <button class="form__submit-button button" type="submit">отправить заявку</button>
+          <p class="form__awarning">* — Обязательные поля</p>
         </div>
-        <div class="welcome__map">
-        </div>
+      </form>
+    </section>
+    <section class="welcome welcome--second">
+      <h2 class="welcome__title visually-hidden">Сотрудничество.</h2>
+      <div class="welcome__contacts contacts">
+        <h3 class="contacts__title"> приглашаем <br> к сотрудничеству дилеров!</h3>
+        <p class="contacts__address">
+          <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="contacts__city">Санкт-Петербург</span>
+        </p>
+      </div>
+      <div class="welcome__map">
       </div>
     </section>
   </main>

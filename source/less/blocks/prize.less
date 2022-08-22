@@ -1,0 +1,69 @@
+.prize__wrapper {
+  box-sizing: border-box;
+  width: 280px;
+  height: 289px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 58px;
+  background-size: 78px 80px;
+  padding: 186px 61px 43px 58px;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    width: 280px;
+    height: 289px;
+    content: "";
+    background-image:
+      linear-gradient(hsl(97 53% 47% / 85%),
+        hsl(97 53% 47% / 85%)),
+      url("../../img/extra-prize.jpg");
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-self: center;
+  }
+}
+
+.prize__text {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: @white;
+  display: block;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .prize__wrapper {
+    background-position: 77px 58px;
+    padding: 71px 124px 69px 422px;
+    width: 100%;
+    height: 200px;
+
+    &::after {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .prize__wrapper {
+    width: 245px;
+    height: 288px;
+    padding: 184px 43px 42px 40px;
+
+    &::after {
+      width: 245px;
+      height: 288px;
+    }
+  }
+}

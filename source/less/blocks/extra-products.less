@@ -1,5 +1,5 @@
 .extra-products {
-  padding: 25px 20px 35px;
+  padding: 0 20px 35px;
   font-family: @font-family-main;
 }
 
@@ -7,6 +7,7 @@
   color: @black;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 36px;
 }
@@ -16,27 +17,13 @@
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 0;
-  }
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .extra-products__item {
-  padding-top: 12px;
+  padding-top: 13px;
   padding-bottom: 19px;
-
-  @media (min-width: @desktop-width) {
-    padding: 24px 0 17px 0;
-    display: flex;
-    align-items: center;
-  }
-
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+  border-top: 1px solid #cdcdcd;
 }
 
 .extra-products__name {
@@ -46,142 +33,86 @@
   text-transform: uppercase;
   color: @darken-grey;
   margin-bottom: 13px;
-
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    width: 180px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-    width: 275px;
-  }
-}
-
-.description__measure {
-  line-height: 14px;
-  font-family: @font-family-second;
-  margin-bottom: 15px;
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-  }
-}
-
-.description__price {
-  line-height: 14px;
-  font-family: @font-family-second;
-  margin-bottom: 15px;
-
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    width: 92px;
-    text-align: right;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-  }
-}
-
-.description {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-    width: 288px;
-    justify-content: space-between;
-    margin-left: 50px;
-  }
 }
 
 .extra-products__make-order {
   width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
 
-  @media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
+  .extra-products {
+    padding: 0 30px 76px;
+  }
+
+  .extra-products__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
+
+  .extra-products__list {
+    margin-bottom: 69px;
+    border: 1px solid #cdcdcd;
+    border-top: none;
+  }
+
+  .extra-products__item {
+    padding: 26px 38px 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .extra-products__name {
+    width: 180px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .extra-products__make-order {
+    font-size: 16px;
+    line-height: 0px;
+    padding: 20px 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-products {
+    padding: 0 110px 86px;
+  }
+
+  .extra-products__title {
+    margin-bottom: 81px;
+  }
+
+  .extra-products__list {
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .extra-products__item {
+    padding: 15px 0 17px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .extra-products__name {
+    margin: 0;
+    width: 274px;
+  }
+
+  .extra-products__make-order {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 20px;
     width: 244px;
     margin-left: 38px;
   }
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    width: 100%;
-  }
-}
-
-.prize__wrapper {
-  box-sizing: border-box;
-  width: 280px;
-  height: 289px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url("../../img/icon-gift.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 58px;
-  background-size: 78px 80px;
-  padding: 186px 61px 43px 58px;
-  text-align: center;
-  position: relative;
-
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    background-position: 77px 58px;
-    margin: 0;
-    padding: 71px 124px 69px 422px;
-    width: 707px;
-    height: 200px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 245px;
-    height: 288px;
-    padding: 184px 43px 42px 40px;
-  }
-
-  &::after {
-    position: absolute;
-    width: 280px;
-    height: 289px;
-    content: "";
-    background-image:
-      linear-gradient(hsl(97 53% 47% / 85%),
-        hsl(97 53% 47% / 85%)),
-      url("../../img/extra-prize.jpg");
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    align-self: center;
-
-    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-      width: 707px;
-      height: 200px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 245px;
-      height: 288px;
-    }
-  }
-}
-
-.prize__text {
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: @white;
-  display: block;
-  margin: 0;
-}
-
-.extra-products__holder {
-  @media (min-width: @desktop-width) {
+  .extra-products__holder {
     display: grid;
     grid-template-columns: 896px 245px;
     column-gap: 79px;
