@@ -1,0 +1,47 @@
+.contacts {
+  background-color: @white;
+}
+
+.contacts__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @light-black;
+  margin: 0;
+  width: 139px;
+}
+
+.contacts__address {
+  font-family: @font-family-second;
+  color: @dark-grey;
+  font-size: @font-size-main;
+  line-height: 20px;
+  width: 139px;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title {
+    font-size: 20px;
+    line-height: 26px;
+    width: 172px;
+  }
+
+  .contacts__address {
+    width: 160px;
+    text-align: right;
+  }
+
+  .contacts__city {
+    display: block;
+    padding-bottom: 6px;
+    padding-top: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__address {
+    text-align: left;
+  }
+}
