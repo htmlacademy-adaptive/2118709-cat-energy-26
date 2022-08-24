@@ -31,6 +31,7 @@ img {
 .page {
   height: 100%;
   max-width: 1440px;
+  margin: 0 auto;
 }
 .page__body {
   display: flex;
@@ -191,7 +192,7 @@ img {
   width: 320px;
   height: 302px;
   content: "";
-  background-image: linear-gradient(hsla(97, 53%, 47%, 0.85), hsla(97, 53%, 47%, 0.85)), url("../../img/bg-cat.jpg");
+  background-image: linear-gradient(hsla(97, 53%, 47%, 0.85), hsla(97, 53%, 47%, 0.85)), url("../../../source/img/bg-cat.jpg");
   top: 0;
   left: 0;
   z-index: -1;
@@ -282,7 +283,7 @@ img {
     width: 50%;
     height: 694px;
     content: "";
-    background-image: linear-gradient(hsla(97, 53%, 47%, 0.85), hsla(97, 53%, 47%, 0.85)), url("../../img/promo-bg-desktop.png");
+    background-image: linear-gradient(hsla(97, 53%, 47%, 0.85), hsla(97, 53%, 47%, 0.85)), url("../../../source/img/promo-bg-desktop.png");
     top: -109px;
     right: 0;
     left: 50%;
@@ -640,12 +641,27 @@ img {
   background-size: 280px 256px;
 }
 .slider__image-before {
-  background-image: url("../../img/slider-before--mobile.png");
+  background-image: url("../../../source/img/slider-before--mobile.png");
   width: 50%;
 }
 .slider__image-after {
-  background-image: url("../../img/slider-after--mobile.png");
+  background-image: url("../../../source/img/slider-after--mobile.png");
   width: 100%;
+}
+@media (min-width: 768px) {
+  .slider {
+    width: 560px;
+    height: 512px;
+  }
+  .slider__image {
+    background-size: 560px 512px;
+  }
+  .slider__image-before {
+    background-image: url("../../../source/img/slider-before--tablet.png");
+  }
+  .slider__image-after {
+    background-image: url("../../../source/img/slider-after--tablet.png");
+  }
 }
 .range__bar {
   position: absolute;
@@ -671,21 +687,6 @@ img {
   cursor: pointer;
   fill: #666666;
 }
-@media (min-width: 768px) {
-  .slider {
-    width: 560px;
-    height: 512px;
-  }
-  .slider__image {
-    background-size: 560px 512px;
-  }
-  .slider__image-before {
-    background-image: url("../../img/slider-before--tablet.png");
-  }
-  .slider__image-after {
-    background-image: url("../../img/slider-after--tablet.png");
-  }
-}
 .welcome {
   font-family: "Oswald", sans-serif;
 }
@@ -696,6 +697,34 @@ img {
   padding: 26px 20px;
   display: flex;
   justify-content: space-between;
+}
+.welcome__map {
+  height: 362px;
+}
+@media (min-width: 768px) {
+  .welcome__map {
+    height: 400px;
+  }
+  .welcome__contacts {
+    padding: 56px 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .welcome {
+    position: relative;
+  }
+  .welcome__contacts {
+    position: absolute;
+    width: 565px;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+    transform: translateY(50%);
+    left: 110px;
+  }
+}
+.contacts {
+  background-color: #ffffff;
 }
 .contacts__title {
   font-weight: 400;
@@ -714,19 +743,7 @@ img {
   width: 139px;
   margin: 0;
 }
-.welcome__map {
-  height: 362px;
-}
-.contacts {
-  background-color: #ffffff;
-}
 @media (min-width: 768px) {
-  .welcome__map {
-    height: 400px;
-  }
-  .welcome__contacts {
-    padding: 56px 70px;
-  }
   .contacts__title {
     font-size: 20px;
     line-height: 26px;
@@ -743,18 +760,6 @@ img {
   }
 }
 @media (min-width: 1440px) {
-  .welcome {
-    position: relative;
-  }
-  .welcome__contacts {
-    position: absolute;
-    width: 565px;
-    padding-left: 80px;
-    padding-right: 80px;
-    box-sizing: border-box;
-    transform: translateY(50%);
-    left: 110px;
-  }
   .contacts__address {
     text-align: left;
   }
@@ -1358,7 +1363,7 @@ img {
   height: 289px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("../../img/icon-gift.svg");
+  background-image: url("../../../source/img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: 50% 58px;
   background-size: 78px 80px;
@@ -1371,7 +1376,7 @@ img {
   width: 280px;
   height: 289px;
   content: "";
-  background-image: linear-gradient(hsla(97, 53%, 47%, 0.85), hsla(97, 53%, 47%, 0.85)), url("../../img/extra-prize.jpg");
+  background-image: linear-gradient(hsla(97, 53%, 47%, 0.85), hsla(97, 53%, 47%, 0.85)), url("../../../source/img/extra-prize.jpg");
   top: 0;
   bottom: 0;
   left: 0;
