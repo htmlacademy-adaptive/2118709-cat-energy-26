@@ -192,7 +192,7 @@ img {
   width: 320px;
   height: 302px;
   content: "";
-  background-image: linear-gradient(hsla(97, 53%, 47%, 0.85), hsla(97, 53%, 47%, 0.85)), url("../../../source/img/bg-cat.jpg");
+  background-image: linear-gradient(hsla(97, 53%, 47%, 0.85), hsla(97, 53%, 47%, 0.85)), url("../../img/bg-cat.jpg");
   top: 0;
   left: 0;
   z-index: -1;
@@ -283,7 +283,7 @@ img {
     width: 50%;
     height: 694px;
     content: "";
-    background-image: linear-gradient(hsla(97, 53%, 47%, 0.85), hsla(97, 53%, 47%, 0.85)), url("../../../source/img/promo-bg-desktop.png");
+    background-image: linear-gradient(hsla(97, 53%, 47%, 0.85), hsla(97, 53%, 47%, 0.85)), url("../../img/promo-bg-desktop.png");
     top: -109px;
     right: 0;
     left: 50%;
@@ -641,11 +641,11 @@ img {
   background-size: 280px 256px;
 }
 .slider__image-before {
-  background-image: url("../../../source/img/slider-before--mobile.png");
+  background-image: url("../../img/slider-before--mobile.png");
   width: 50%;
 }
 .slider__image-after {
-  background-image: url("../../../source/img/slider-after--mobile.png");
+  background-image: url("../../img/slider-after--mobile.png");
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -657,10 +657,10 @@ img {
     background-size: 560px 512px;
   }
   .slider__image-before {
-    background-image: url("../../../source/img/slider-before--tablet.png");
+    background-image: url("../../img/slider-before--tablet.png");
   }
   .slider__image-after {
-    background-image: url("../../../source/img/slider-after--tablet.png");
+    background-image: url("../../img/slider-after--tablet.png");
   }
 }
 .range__bar {
@@ -1363,7 +1363,7 @@ img {
   height: 289px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("../../../source/img/icon-gift.svg");
+  background-image: url("../../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: 50% 58px;
   background-size: 78px 80px;
@@ -1376,7 +1376,7 @@ img {
   width: 280px;
   height: 289px;
   content: "";
-  background-image: linear-gradient(hsla(97, 53%, 47%, 0.85), hsla(97, 53%, 47%, 0.85)), url("../../../source/img/extra-prize.jpg");
+  background-image: linear-gradient(hsla(97, 53%, 47%, 0.85), hsla(97, 53%, 47%, 0.85)), url("../../img/extra-prize.jpg");
   top: 0;
   bottom: 0;
   left: 0;
