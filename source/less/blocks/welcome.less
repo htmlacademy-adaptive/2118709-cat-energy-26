@@ -1,0 +1,43 @@
+.welcome {
+  font-family: @font-family-main;
+
+  &--second {
+    background-color: @lightest-grey;
+  }
+}
+
+.welcome__contacts {
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome__map {
+  height: 362px;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__map {
+    height: 400px;
+  }
+
+  .welcome__contacts {
+    padding: 56px 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome {
+    position: relative;
+  }
+
+  .welcome__contacts {
+    position: absolute;
+    width: 565px;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+    transform: translateY(50%);
+    left: 110px;
+  }
+}

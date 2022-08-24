@@ -1,0 +1,120 @@
+.extra-products {
+  padding: 0 20px 35px;
+  font-family: @font-family-main;
+}
+
+.extra-products__title {
+  color: @black;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.extra-products__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.extra-products__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-top: 1px solid #cdcdcd;
+}
+
+.extra-products__name {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @darken-grey;
+  margin-bottom: 13px;
+}
+
+.extra-products__make-order {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .extra-products {
+    padding: 0 30px 76px;
+  }
+
+  .extra-products__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
+
+  .extra-products__list {
+    margin-bottom: 69px;
+    border: 1px solid #cdcdcd;
+    border-top: none;
+  }
+
+  .extra-products__item {
+    padding: 26px 38px 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .extra-products__name {
+    width: 180px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .extra-products__make-order {
+    font-size: 16px;
+    line-height: 0px;
+    padding: 20px 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-products {
+    padding: 0 110px 86px;
+  }
+
+  .extra-products__title {
+    margin-bottom: 81px;
+  }
+
+  .extra-products__list {
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .extra-products__item {
+    padding: 15px 0 17px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .extra-products__name {
+    margin: 0;
+    width: 274px;
+  }
+
+  .extra-products__make-order {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 20px;
+    width: 244px;
+    margin-left: 38px;
+  }
+
+  .extra-products__holder {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    column-gap: 79px;
+  }
+}

@@ -1,0 +1,45 @@
+.card {
+  border-top: 1px solid @soft-grey;
+  border-bottom: 1px solid @soft-grey;
+}
+
+.card__wrapper {
+  padding: 19px 20px 25px;
+}
+
+.card__order-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.card__link {
+  text-decoration: none;
+  color: @darken-grey;
+}
+
+.card__title {
+  color: @darken-grey;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.card__description {
+  font-family: @font-family-second;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.card__description-value {
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .card {
+    background-image: linear-gradient(#ffffff 23%, #eaeaea 23%);
+  }
+}

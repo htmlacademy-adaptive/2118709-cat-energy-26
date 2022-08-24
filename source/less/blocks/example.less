@@ -1,0 +1,198 @@
+.example {
+  background-color: @grey;
+  font-family: @font-family-main;
+  color: @dark-grey;
+  padding: 66px 20px 40px 20px;
+}
+
+.example__container {
+  padding-bottom: 20px;
+}
+
+.example__profit {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example__wrapper {
+  width: 124px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 3px;
+}
+
+.example__wrapper-price {
+  padding-top: 20px;
+  padding-left: 46px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+
+  dt {
+    grid-column-start: 1;
+  }
+
+  dd {
+    grid-column-start: 2;
+  }
+}
+
+.example__title {
+  color: @black;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.example__description {
+  font-family: @font-family-second;
+  color: @dark-grey;
+  margin-bottom: 40px;
+}
+
+.example__profit-value {
+  color: @black;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 0;
+}
+
+.example__profit-name {
+  font-family: @font-family-second;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.example__profit-value-diffrent {
+  font-family: @font-family-main;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-left: 2px;
+}
+
+.example__profit-name-diffrent {
+  font-family: @font-family-main;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    padding: 43px 30px 79px 30px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  .example__profit-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__profit-name {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__profit-value-diffrent,
+  .example__profit-name-diffrent {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__container {
+    padding-bottom: 99px;
+  }
+
+  .example__slider {
+    margin-left: 74px;
+    margin-right: 74px;
+  }
+
+  .example__profit {
+    justify-content: flex-start;
+  }
+
+  .example__wrapper {
+    margin-right: 42px;
+  }
+
+  .example__wrapper-price {
+    width: 174px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    padding-top: 11px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    padding: 0 110px 100px 110px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(@white 23%, @grey 23%);
+  }
+
+  .example__container {
+    width: 436px;
+    padding-bottom: 0;
+  }
+
+  .example__slider {
+    margin: 0;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+  }
+
+  .example__description {
+    margin-bottom: 69px;
+  }
+
+  .example__wrapper-price {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 0;
+    padding-top: 55px;
+    margin-left: 0;
+  }
+
+  .example__profit-value-diffrent {
+    margin-left: 63px;
+  }
+}
