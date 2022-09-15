@@ -1,6 +1,11 @@
 .filters {
   background-color: @white;
-  padding: 0 20px 32px 20px;
+  padding-bottom: 32px;
+}
+
+.filters__info-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .filters__info {
@@ -13,12 +18,17 @@
 
 @media (min-width: @tablet-width) {
   .filters {
-    padding: 0 70px 72px 70px;
+    padding-bottom: 72px;
+  }
+
+  .filters__info-wrapper {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .filters__info {
     margin-bottom: 66px;
-    margin-right: 375px;
+    margin-right: 248px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -26,7 +36,12 @@
 
 @media (min-width: @desktop-width) {
   .filters {
-    padding: 0 110px 82px 110px;
+    padding-bottom: 82px;
+  }
+
+  .filters__info-wrapper {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 
   .filters__info {

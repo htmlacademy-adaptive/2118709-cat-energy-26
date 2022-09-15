@@ -2,7 +2,7 @@
   background-color: @grey;
   font-family: @font-family-main;
   color: @dark-grey;
-  padding: 66px 20px 40px 20px;
+  padding: 25px 20px 40px 20px;
 }
 
 .example__container {
@@ -19,8 +19,9 @@
 
 .example__wrapper {
   width: 124px;
-  border: 1px solid hsl(0, 0%, 80%);
-  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .example__wrapper-price {
@@ -57,10 +58,15 @@
   color: @black;
   font-size: 24px;
   line-height: 24px;
+  width: 124px;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 17px;
   text-align: center;
   margin: 0;
   margin-bottom: 7px;
-  padding: 0;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 3px;
 }
 
 .example__profit-name {
@@ -70,6 +76,14 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding-left: 7px;
+  width: 74px;
+  padding-right: 10px;
+  background-color: @grey;
+  margin-top: -16px;
 }
 
 .example__profit-value-diffrent {
@@ -82,6 +96,7 @@
   margin: 0;
   padding: 0;
   margin-left: 2px;
+  border: none;
 }
 
 .example__profit-name-diffrent {
@@ -98,6 +113,7 @@
 @media (min-width: @tablet-width) {
   .example {
     padding: 43px 30px 79px 30px;
+    background-image: linear-gradient(#ffffff 58%, #eaeaea 58%);
   }
 
   .example__title {
@@ -120,6 +136,7 @@
   .example__profit-name {
     font-size: 14px;
     line-height: 14px;
+    background-color: @white;
   }
 
   .example__profit-value-diffrent,
@@ -180,6 +197,10 @@
 
   .example__description {
     margin-bottom: 69px;
+  }
+
+  .example__profit-name {
+    background-color: @grey;
   }
 
   .example__wrapper-price {
