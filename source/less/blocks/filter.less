@@ -1,8 +1,18 @@
 .filter {
-  padding-top: 22px;
-  padding-bottom: 20px;
   border-top: 1px solid @light-grey;
   border-bottom: 1px solid @light-grey;
+
+  @media (max-width: @mobile-width-only) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &--program {
+    @media (max-width: @mobile-width-only) {
+      padding-top: 22px;
+      padding-bottom: 20px;
+    }
+  }
 
   &--extra {
     border: none;
@@ -30,17 +40,19 @@
 
 @media (min-width: @tablet-width) {
   .filter {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 27px;
-    border: 1px solid @light-grey;
+    border: none;
 
     &--extra {
       border: none;
+      padding-left: 70px;
+      padding-right: 70px;
     }
   }
 
   .filter__list {
+    border: 1px solid @light-grey;
+    padding: 25px 10px 25px 27px;
+
     &--extra {
       display: grid;
       grid-template-columns: repeat(2, 221px);
@@ -64,6 +76,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .filter {
+    &--extra {
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+  }
+
   .filter__list {
     &--extra {
       grid-template-columns: repeat(4, 221px);

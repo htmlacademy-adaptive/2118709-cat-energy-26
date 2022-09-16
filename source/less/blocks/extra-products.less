@@ -1,6 +1,18 @@
 .extra-products {
   padding: 0 20px 35px;
   font-family: @font-family-main;
+  position: relative;
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    height: 2px;
+    left: 0;
+    width: 100%;
+    background-color: #68b738;
+    z-index: -1;
+  }
 }
 
 .extra-products__title {
@@ -10,6 +22,11 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 36px;
+  margin-left: -40px;
+  padding-left: 40px;
+  width: fit-content;
+  padding-right: 20px;
+  background-color: @white;
 }
 
 .extra-products__list {
@@ -45,12 +62,19 @@
 @media (min-width: @tablet-width) {
   .extra-products {
     padding: 0 30px 76px;
+
+    ::before {
+      top: 21px;
+    }
   }
 
   .extra-products__title {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 0;
   }
 
   .extra-products__list {

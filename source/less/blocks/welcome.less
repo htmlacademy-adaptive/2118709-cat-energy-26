@@ -1,7 +1,7 @@
 .welcome {
   font-family: @font-family-main;
 
-  &--second {
+  &--grey-bg {
     background-color: @lightest-grey;
   }
 }
@@ -16,8 +16,19 @@
   height: 362px;
 }
 
+.welcome__map iframe {
+  border: none;
+  display: block;
+  height: 362px;
+  width: 100%;
+}
+
 @media (min-width: @tablet-width) {
   .welcome__map {
+    height: 400px;
+  }
+
+  .welcome__map iframe {
     height: 400px;
   }
 

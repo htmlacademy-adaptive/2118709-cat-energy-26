@@ -1,5 +1,6 @@
 .social {
   padding: 22px 74px;
+  width: 132px;
 }
 
 .social__list {
@@ -9,4 +10,18 @@
   display: flex;
   justify-content: space-between;
   width: 132px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .social {
+    border-top: 1px solid  #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .social {
+    padding: 0;
+  }
 }
