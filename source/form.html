@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href=".//favicon.ico">
+  <link rel="icon" href="..//img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="..//img/favicons/apple.png">
+  <link rel="manifest" href=".//manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -17,7 +21,7 @@
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="38"
-            alt="Иконка логотипа Кэт энерджи.">
+              alt="Иконка логотипа Кэт энерджи.">
           </picture>
         </a>
       </div>
@@ -55,11 +59,13 @@
             <div class="form__field-wrapper">
               <p class="form__field">
                 <label class="form__label" for="cat-name">ИМЯ:*</label>
-                <input class="form__field-input " type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
+                <input class="form__field-input " type="text" id="cat-name" name="cat-name" placeholder="барсик"
+                  required>
               </p>
               <p class="form__field">
                 <label class="form__label" for="cat-weight">Вес (кг):*</label>
-                <input class="form__field-input" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+                <input class="form__field-input" type="number" id="cat-weight" name="cat-weight" placeholder="7"
+                  required>
               </p>
               <p class="form__field">
                 <label class="form__label" for="cat-age">Возраст (лет):</label>
@@ -104,13 +110,22 @@
           <div class="form__holder">
             <p class="form__field form__field--contacts">
               <label class="form__label" for="email">E-mail:*</label>
-              <input class="form__field-input" type="text" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-              <svg class="form-field__icon" aria-hidden="true" focusable="false" width="19" height="14" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m10 14-9-7v-2.5h18v2.5zm8-8.5h-16v1l8 6.2 8-6.2zm-17 4v8h18v-8h-1v7h-16v-7z"/></svg>
+              <input class="form__field-input" type="text" id="email" name="email" placeholder="kuklachev@gmail.com"
+                required>
+              <svg class="form-field__icon" aria-hidden="true" focusable="false" width="19" height="14"
+                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="m10 14-9-7v-2.5h18v2.5zm8-8.5h-16v1l8 6.2 8-6.2zm-17 4v8h18v-8h-1v7h-16v-7z" />
+              </svg>
             </p>
             <p class="form__field form__field--contacts">
               <label class="form__label" for="phone">Телефон:*</label>
-              <input class="form__field-input" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
-              <svg class="form-field__icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M14.646 7.146a.5.5 0 01.708 0l2.5 2.5a.5.5 0 010 .708l-2.5 2.5a.5.5 0 01-.708-.708l1.647-1.646H9a.5.5 0 010-1h7.293l-1.647-1.646a.5.5 0 010-.708zM3.48 3.48C3.174 3.783 3 4.163 3 4.5v11c0 .337.174.717.479 1.021.304.305.684.479 1.021.479H7v-4H4.5a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5H7V3H4.5c-.337 0-.717.174-1.021.479zM7.5 2a.5.5 0 01.5.5v5a.5.5 0 01-.5.5H5v4h2.5a.5.5 0 01.5.5v5a.5.5 0 01-.5.5h-3c-.663 0-1.283-.326-1.729-.771C2.326 16.783 2 16.163 2 15.5v-11c0-.663.326-1.283.771-1.729C3.217 2.326 3.837 2 4.5 2h3z"/></svg>
+              <input class="form__field-input" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90"
+                required>
+              <svg class="form-field__icon" aria-hidden="true" focusable="false" width="20" height="20"
+                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.646 7.146a.5.5 0 01.708 0l2.5 2.5a.5.5 0 010 .708l-2.5 2.5a.5.5 0 01-.708-.708l1.647-1.646H9a.5.5 0 010-1h7.293l-1.647-1.646a.5.5 0 010-.708zM3.48 3.48C3.174 3.783 3 4.163 3 4.5v11c0 .337.174.717.479 1.021.304.305.684.479 1.021.479H7v-4H4.5a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5H7V3H4.5c-.337 0-.717.174-1.021.479zM7.5 2a.5.5 0 01.5.5v5a.5.5 0 01-.5.5H5v4h2.5a.5.5 0 01.5.5v5a.5.5 0 01-.5.5h-3c-.663 0-1.283-.326-1.729-.771C2.326 16.783 2 16.163 2 15.5v-11c0-.663.326-1.283.771-1.729C3.217 2.326 3.837 2 4.5 2h3z" />
+              </svg>
             </p>
           </div>
         </fieldset>
@@ -244,10 +259,10 @@
         </ul>
       </div>
       <div class="about-us__academy academy">
-        <a class="academy__link" href="#">
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="academy__title">HTML Academy</span>
         </a>
-        <a>
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="academy__logo" aria-hidden="true" focusable="false" width="27" height="34"
             xmlns="http://www.w3.org/2000/svg">
             <path

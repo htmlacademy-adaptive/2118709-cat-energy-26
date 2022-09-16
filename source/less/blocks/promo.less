@@ -14,7 +14,7 @@
     background-image:
       linear-gradient(hsl(97 53% 47% / 85%),
         hsl(97 53% 47% / 85%)),
-      url("../img/bg-cat.jpg");
+      url("../img/bg-cat-mobile.jpg");
     top: 0;
     left: 0;
     z-index: -1;
@@ -22,6 +22,14 @@
     background-position: center;
     background-size: cover;
     align-self: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(hsl(97 53% 47% / 85%),
+          hsl(97 53% 47% / 85%)),
+        url("../img/bg-cat-mobile@2x.jpg");
+      background-size: 320px 302px, 100% auto;
+    }
   }
 }
 
@@ -122,7 +130,7 @@
       background-image:
         linear-gradient(hsl(97 53% 47% / 85%),
           hsl(97 53% 47% / 85%)),
-        url("../img/promo-bg-desktop.png");
+        url("../img/bg-cat-desktop.jpg");
       top: -109px;
       right: 0;
       left: 50%;
@@ -130,6 +138,14 @@
       background-repeat: no-repeat;
       background-position: center;
       align-self: center;
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient(hsl(97 53% 47% / 85%),
+            hsl(97 53% 47% / 85%)),
+          url("../img/bg-cat-desktop@2x.jpg");
+        background-size: 720px 694px, 100% auto;
+      }
     }
   }
 
