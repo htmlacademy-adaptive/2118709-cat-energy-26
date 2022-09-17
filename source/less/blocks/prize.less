@@ -20,7 +20,7 @@
     background-image:
       linear-gradient(hsl(97 53% 47% / 85%),
         hsl(97 53% 47% / 85%)),
-      url("../img/extra-prize.jpg");
+      url("../img/extra-prize-mobile.jpg");
     top: 0;
     bottom: 0;
     left: 0;
@@ -29,6 +29,13 @@
     background-position: center;
     background-size: cover;
     align-self: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(hsl(97 53% 47% / 85%),
+        hsl(97 53% 47% / 85%)),
+        url("../img/extra-prize-mobile@2x.jpg");
+    }
   }
 }
 
@@ -49,8 +56,19 @@
     height: 200px;
 
     &::after {
+      background-image:
+        linear-gradient(hsl(97 53% 47% / 85%),
+        hsl(97 53% 47% / 85%)),
+        url("../img/extra-prize-tablet.png");
       width: 100%;
       height: 200px;
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient(hsl(97 53% 47% / 85%),
+          hsl(97 53% 47% / 85%)),
+          url("../img/extra-prize-tablet@2x.png");
+      }
     }
   }
 }
@@ -64,6 +82,17 @@
     &::after {
       width: 245px;
       height: 288px;
+      background-image:
+        linear-gradient(hsl(97 53% 47% / 85%),
+        hsl(97 53% 47% / 85%)),
+        url("../img/extra-prize-desktop.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient(hsl(97 53% 47% / 85%),
+          hsl(97 53% 47% / 85%)),
+          url("../img/extra-prize-desktop@2x.png");
+      }
     }
   }
 }
