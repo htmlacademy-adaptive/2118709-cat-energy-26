@@ -106,11 +106,18 @@
 
 @media (min-width: @desktop-width) {
   .extra-products {
-    padding: 0 110px 86px;
+    padding: 0 110px 17px;
+
+    &::before {
+      top: 24px;
+    }
   }
 
   .extra-products__title {
     margin-bottom: 81px;
+    padding-left: 40px;
+    padding-right: 34px;
+    margin-left: -40px;
   }
 
   .extra-products__list {
@@ -119,7 +126,7 @@
   }
 
   .extra-products__item {
-    padding: 15px 0 17px 0;
+    padding: 14px 0 17px 0;
     display: flex;
     align-items: center;
   }
