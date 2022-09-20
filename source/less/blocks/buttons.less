@@ -10,4 +10,20 @@
   text-decoration: none;
   cursor: pointer;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: @green-hover;
+  }
+
+  &:focus {
+    background-color: @green-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }

@@ -73,6 +73,12 @@
   margin: 0;
 }
 
+.benefits-br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
 .benefits__list {
   list-style-type: none;
   margin: 0;
@@ -89,7 +95,7 @@
   }
 
   .benefits {
-    padding: 45px 30px 47px 30px;
+    padding: 45px 30px 45px 30px;
     border-bottom: 1px solid #e6e6e6;
   }
 
@@ -122,7 +128,26 @@
       z-index: 1;
     }
 
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: 400;
+      font-family: @font-family-main;
+      color: @lightest-grey;
+      counter-increment: program-counter;
+      content: counter(program-counter);
+      z-index: -1;
+    }
+
     &--leaf {
+      &::after {
+        right: 22px;
+      }
+
       &::before {
         background-image: url("../img/benefits-leaf-mobile.svg");
         background-size: 30px 32px;
@@ -130,6 +155,12 @@
     }
 
     &--powder {
+      margin-left: -2px;
+
+      &::after {
+        right: 5px;
+      }
+
       &::before {
         background-image: url("../img/benefits-powder-mobile.svg");
         background-size: 29px 31px;
@@ -149,21 +180,6 @@
         background-size: 25px 30px;
       }
     }
-
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: inline-block;
-      font-size: 280px;
-      line-height: 280px;
-      font-weight: 400;
-      font-family: @font-family-main;
-      color: @lightest-grey;
-      counter-increment: program-counter;
-      content: counter(program-counter);
-      z-index: -1;
-    }
   }
 
   .benefits__description {
@@ -174,7 +190,7 @@
 
 @media (min-width: @desktop-width) {
   .benefits {
-    padding: 52px 110px 69px 110px;
+    padding: 71px 110px 69px 110px;
     border: none;
   }
 
@@ -189,7 +205,33 @@
     width: 230px;
     margin-right: 94px;
 
+    &--leaf {
+      &::after {
+        right: 6px;
+      }
+    }
+
+    &--powder {
+      margin-left: 0;
+
+      &::after {
+        right: -16px;
+      }
+    }
+
+    &--fork {
+      &::after {
+        right: -19px;
+      }
+    }
+
     &--time {
+      margin-left: 2px;
+
+      &::after {
+        right: -19px;
+      }
+
       .benefits__description {
         width: 245px;
       }

@@ -40,7 +40,7 @@
   line-height: 36px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
   font-weight: 400;
 }
 
@@ -49,14 +49,14 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .promo__button {
   width: 280px;
   font-size: 14px;
   line-height: 18px;
-  padding: 7px 44px;
+  padding: 11px 44px;
 }
 
 @media (min-width: @tablet-width) {
@@ -64,7 +64,7 @@
     color: @black;
     padding: 0 30px 0 30px;
     margin-bottom: 0;
-    min-height: 925px;
+    min-height: 862px;
 
     &::after {
       display: none;
@@ -77,11 +77,11 @@
 
   .promo__wrapper {
     padding-left: 87px;
-    padding-top: 62px;
+    padding-top: 51px;
   }
 
   .promo__title {
-    width: 414px;
+    width: 420px;
     font-size: 60px;
     text-align: left;
     line-height: 60px;
@@ -92,24 +92,30 @@
   .promo__slogan {
     font-size: 20px;
     line-height: 20px;
-    margin-left: 0;
+    margin-left: 2px;
     margin-bottom: 49px;
     text-align: left;
   }
 
-  .promo__image {
+  .promo__image-box {
     width: 709px;
     height: 609px;
     position: absolute;
-    top: 265px;
+    top: 201px;
+    right: -1px;
     z-index: -1;
+
+    img {
+      width: 100%;
+    }
   }
 
   .promo__button {
     width: 244px;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
+    padding: 17px 26px;
+    margin-left: 2px;
   }
 }
 
@@ -117,7 +123,7 @@
 @media (min-width: @desktop-width) {
   .promo {
     padding: 0 110px 0 110px;
-    margin-bottom: 82px;
+    margin-bottom: 73px;
     min-height: 585px;
 
     &::after {
@@ -131,7 +137,7 @@
         linear-gradient(hsl(97 53% 47% / 85%),
           hsl(97 53% 47% / 85%)),
         url("../img/bg-cat-desktop.jpg");
-      top: -109px;
+      top: -118px;
       right: 0;
       left: 50%;
       z-index: 1;
@@ -154,7 +160,8 @@
   }
 
   .promo__wrapper {
-    padding-top: 112px;
+    padding-top: 106px;
+    padding-left: 78px;
   }
 
   .promo__title {
@@ -166,12 +173,12 @@
     margin-bottom: 52px;
   }
 
-  .promo__image {
+  .promo__image-box {
     width: 552px;
     height: 499px;
     position: absolute;
-    top: -54px;
-    left: 330px;
+    top: -83px;
+    left: 370px;
     z-index: 2;
   }
 }

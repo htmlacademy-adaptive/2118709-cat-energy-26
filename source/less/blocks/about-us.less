@@ -4,8 +4,19 @@
   align-items: center;
 }
 
+.about-us__link {
+  &:hover,
+  &:focus .about-us__logo {
+    fill-opacity: 0.8;
+  }
+
+  &:active .about-us__logo {
+    fill-opacity: 0.6;
+  }
+}
+
 .about-us__cat-energy {
-  padding: 39px 76px 32px;
+  padding: 39px 76px 28px;
   width: 128px;
   text-align: center;
 }

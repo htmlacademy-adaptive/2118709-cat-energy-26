@@ -2,6 +2,10 @@
   position: relative;
   display: block;
   padding-left: 45px;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .control__mark {
@@ -57,12 +61,15 @@
 .control__label {
   display: block;
   padding-top: 6px;
+  font-size: 16px;
 }
 
 @media (min-width: @tablet-width) {
   .control__label {
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .control__mark {

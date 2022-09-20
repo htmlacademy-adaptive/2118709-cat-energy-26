@@ -4,7 +4,7 @@
   border: 0;
 
   &--contacts {
-    margin-bottom: 23px;
+    margin-bottom: 10px;
   }
 
   &--comments {
@@ -21,8 +21,13 @@
   padding-right: 20px;
 }
 
+.form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 .form__field-group-container {
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 }
 
 .form__field {
@@ -32,12 +37,16 @@
   position: relative;
 
   &:not(:last-child) {
-    margin-bottom: 13px;
+    margin-bottom: 12px;
   }
 
   &--textarea {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  &--contacts {
+    margin-bottom: 16px;
   }
 }
 
@@ -48,16 +57,12 @@
 }
 
 .form__field-wrapper {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
   @media (max-width: @mobile-width-only) {
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-
-.form__label {
-  text-transform: uppercase;
 }
 
 .form__title-wrapper {
@@ -69,12 +74,18 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 53%;
     height: 2px;
     left: 0;
     width: 100%;
     background-color: @green-main;
     z-index: -1;
+  }
+
+  &--contacts {
+    &::before {
+      top: 30%;
+    }
   }
 }
 
@@ -103,6 +114,7 @@
 
   &--contacts {
     margin-bottom: 35px;
+    margin-top: 3px;
   }
 
   &--comments {
@@ -130,29 +142,66 @@
 }
 
 .form__field-input {
-  margin-left: 13px;
+  margin-left: 16px;
   flex-grow: 1;
   font-family: @font-family-main;
   font-size: @font-size-main;
   line-height: @line-height-main;
   text-transform: uppercase;
   color: @dark-grey;
-  padding: 13px 25px 14px 16px;
+  padding: 13px 25px 14px 12px;
   border: 1px solid @light-grey;
   appearance: textfield;
+  box-sizing: border-box;
 
   &--textarea {
     min-height: 150px;
     margin-left: 0;
     resize: none;
+    padding: 8px 10px 14px 14px;
   }
 
   &::placeholder {
     font-family: @font-family-main;
-    font-size: @font-size-main;
     line-height: @line-height-main;
     text-transform: uppercase;
     color: @dark-grey;
+    font-size: 16px;
+  }
+
+  &--tel {
+    margin-left: 11px;
+    padding-bottom: 11px;
+  }
+
+  &--email {
+    padding-left: 14px;
+    padding-bottom: 11px;
+    margin-left: 11px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 1px solid @dark-grey;
+    outline: 1px solid @dark-grey;
+  }
+
+  &--important {
+    &:focus + .form-field__icon {
+      fill: @green-main;
+    }
+
+    &:focus:invalid {
+      outline: 1px solid #ff8282;
+      border: 1px solid #ff8282;
+    }
+
+    &:focus:invalid + .form-field__icon {
+      fill: #ff8282;
+    }
   }
 }
 
