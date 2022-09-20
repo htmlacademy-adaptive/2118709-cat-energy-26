@@ -1,5 +1,6 @@
 .social {
-  padding: 22px 74px;
+  padding: 19px 74px;
+  padding-bottom: 18px;
   width: 132px;
 }
 
@@ -10,6 +11,24 @@
   display: flex;
   justify-content: space-between;
   width: 132px;
+}
+
+.social__icon {
+  fill: @lighten-grey;
+}
+
+.social__link {
+  &:hover .social__icon {
+    fill: @green-main;
+  }
+
+  &:focus .social__icon {
+    fill: @green-main;
+  }
+
+  &:active .social__icon {
+    fill-opacity: 0.3;
+  }
 }
 
 @media (max-width: @mobile-width-only) {
@@ -23,5 +42,12 @@
 @media (min-width: @tablet-width) {
   .social {
     padding: 0;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    margin-left: 28px;
   }
 }

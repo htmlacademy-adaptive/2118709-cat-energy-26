@@ -5,7 +5,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 45px;
+    top: 40px;
     left: 50%;
     margin-left: -15px;
     display: block;
@@ -17,7 +17,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 45px;
+    top: 40px;
     left: 50%;
     display: block;
     margin-left: -15px;
@@ -54,11 +54,23 @@
   background-color: @lightest-grey;
   padding: 11px 20px;
   width: 100%;
+
+  &:hover {
+    background-color: @soft-grey;
+  }
+
+  &:focus {
+    background-color: @soft-grey;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .show-more {
-    padding: 137px 40px 40px 40px;
+    padding: 161px 40px 40px 40px;
     border: 2px solid @lightest-grey;
     margin-top: 80px;
     position: relative;
