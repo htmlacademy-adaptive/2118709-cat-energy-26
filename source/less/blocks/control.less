@@ -6,6 +6,19 @@
   &:disabled {
     opacity: 0.3;
   }
+
+  &:hover {
+    .control__mark {
+      border-color: #bababa;
+    }
+  }
+
+  &:focus-within {
+    .control__mark {
+      outline: 1px solid @green-main;
+      border: 1px solid @green-main;
+    }
+  }
 }
 
 .control__mark {
