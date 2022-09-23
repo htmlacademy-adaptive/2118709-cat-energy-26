@@ -208,12 +208,12 @@
       fill: @green-main;
     }
 
-    &:invalid {
+    &:focus:invalid {
       outline: 1px solid #ff8282;
       border: 1px solid #ff8282;
     }
 
-    &:invalid + .form__field-icon {
+    &:focus:invalid + .form__field-icon {
       fill: #ff8282;
     }
   }
@@ -398,7 +398,7 @@
 
   .form__field-group {
     &--contacts {
-      margin-bottom: 68px;
+      margin-bottom: 58px;
     }
 
     &--comments {
@@ -431,10 +431,10 @@
 
   .form__field {
     &--contacts {
-      margin-bottom: 0;
+      margin-bottom: 10px;
 
       &:not(:last-child) {
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
     }
 
